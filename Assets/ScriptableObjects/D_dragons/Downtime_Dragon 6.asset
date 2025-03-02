@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e75c9ad1c5e844885f19fa4c62579c, type: 3}
+  m_Name: Downtime_Dragon 6
+  m_EditorClassIdentifier: 
+  DragonID: 1006
+  DragonName: ButterBall
+  DragonObject: {fileID: 7027128623465740531, guid: 86ea68d83a0171d4cabd66a1fcafba64,
+    type: 3}
+  DragonCategory: 1
+  Hat_id: 4
+  Backpack_id: -1
+  pet_id: -1
+  holding_id: -1
+  Rideable_id: 0

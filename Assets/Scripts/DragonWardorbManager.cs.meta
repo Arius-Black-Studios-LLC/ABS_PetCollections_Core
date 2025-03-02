@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 06891bb018903f34a897aece099074d8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - holdingSpotParent: {fileID: 8268644646269121361, guid: 73195b82a9b613d41ad3cb9d4c1628a9,
+      type: 3}
+  - hatSpotParent: {fileID: 6306766840378134758, guid: 0f432d103ffffda4d97efb9ac4b3c70c,
+      type: 3}
+  - rideableSpotParent: {fileID: 1058163758565334755, guid: 3f50c267dcdab9c4b86cce7f2d902156,
+      type: 3}
+  - backpacksSpotParent: {fileID: 1684508742143851261, guid: 70803c52abea0874cae8f58842443053,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

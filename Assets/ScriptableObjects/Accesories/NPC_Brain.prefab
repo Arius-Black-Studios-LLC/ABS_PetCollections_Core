@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &339562107965123714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339562107965419682}
+  - component: {fileID: 4040709105689897282}
+  - component: {fileID: 5515515976360939619}
+  - component: {fileID: 4084180835623183699}
+  - component: {fileID: 3876944644688719624}
+  - component: {fileID: 8439576010038864404}
+  - component: {fileID: -12529380619140390}
+  m_Layer: 0
+  m_Name: NPC_Brain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &339562107965419682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339562107965123714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4040709105689897282
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339562107965123714}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1.27
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.73, z: 0}
+--- !u!195 &5515515976360939619
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339562107965123714}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 2
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.51
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &4084180835623183699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339562107965123714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865d741e3d16da443883d4e3bca05385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultState: {fileID: 3876944644688719624}
+  allStates: []
+  currentstate: {fileID: 0}
+  agent: {fileID: 5515515976360939619}
+  dragonID: 0
+  animManager: {fileID: 0}
+  wardorbManager: {fileID: 0}
+  stateTimer: 45
+  counter: 0
+--- !u!114 &3876944644688719624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339562107965123714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84f14dc9ceabd4f4daf49b8d014bcd37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumHour: 0
+  maximumHour: 21
+  weight_CommonHours: 20
+  weight_uncommonHours: 10
+  wanderRadius: 5
+  wanderSpeed: 2
+  elapsedTime: 0
+  nextWanderTime: 4
+--- !u!114 &8439576010038864404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339562107965123714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8f23d3315004f4f87169fd43192d52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumHour: 21
+  maximumHour: 6
+  weight_CommonHours: 90
+  weight_uncommonHours: 15
+  IsSleeping: 0
+  sleepingBuddy: {fileID: 0}
+  minDistance: 0
+  maxDistance: 5
+--- !u!114 &-12529380619140390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339562107965123714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991b22d8db726294bba4b63c76d8cae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumHour: 8
+  maximumHour: 20
+  weight_CommonHours: 70
+  weight_uncommonHours: 30
+  leader: {fileID: 0}
+  maxDistance: 20
+  TimerMax: 10
+  counter: 0

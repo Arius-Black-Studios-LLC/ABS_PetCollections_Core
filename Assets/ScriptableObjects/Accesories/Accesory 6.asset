@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7602b2a52b45748bc91bc53ecf155a, type: 3}
+  m_Name: Accesory 6
+  m_EditorClassIdentifier: 
+  accesory_id: 6
+  accesory_name: Exclimation Mark
+  accesory_GO: {fileID: 1939513987234184, guid: 4428196f7157cfd44a82f1b19a4271e8,
+    type: 3}
+  accesory_type: 0
+  icon: {fileID: 0}
